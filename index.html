@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<meta charset utf-8 >
+<src  img="3 E-learning.jpg"  alt ="gif">
+<head>TP 1-Projet Java script  </head>
+
+<body>
+
+<h1> 3 min E-learning  </h1>
+<h2 >Questions/Réponses </h2>
+
+<ul>
+    <h6>Questions & Réponses  </h6>
+<li>Ques 1 :-Quelle est la la capitale de la chine ?</li>
+<li>Pekin </li>
+<li>Vienne </li>
+<li>Paris </li>
+
+ <h6>Que 2 :- Quelle est la capitale de France</h6>
+<li>Pekin </li>
+<li>Vienne </li>
+<li>Paris </li>
+
+<h6>Quelle est la capitale de l’Autriche</h6>
+<li>Pekin </li>
+<li>Vienne </li>
+<li>Paris </li>
+
+</ul>
+
+ <script> 
+const QUESTIONS = [
+  {
+    question:
+      'A quel compositeur est consacré le film Amadeus ?\n1. Beethoven\n2. Mozart',
+    reponse: 2
+  },
+  {
+    question: "Quelle est la capitale de l'Autriche ?\n1. Vienne\n2. Oslo",
+    reponse: 1
+  },
+  {
+    question:
+      'Quel organe est perturbé par les acouphènes ?\n1. Les Pieds\n2. Les Oreilles',
+    reponse: 2
+  }
+];
+
+
+
+
+const Questions =[
+    { question:'quelle  est la capitale de la chine: \n1 .Pekin \n2.Paris \n3 .Prague ', 
+      reponse:1}, 
+
+    {question:'quelle  est la capitale Autriche : \n1 .Pekin \n2.Paris \n3 .Vienne ' , 
+      reponse:3},
+    { question:'quelle  est la capitale de france : \n1 .Pekin \n2.Paris \n3 .Vienne ' , 
+      reponse:2}
+];
+    nbrANswers=0;
+    for(let i=0;i<=Questions.length;i+=1)
+    {
+        let userAnswers=prompt(Questions[i].question);
+        if(userAnswers==Questions[i].reponse){
+            alert('Bravo!');
+            nbrANswers=+1;
+        }else {
+            alerte('Mauvaise réponse');
+        }
+    }
+ </script>
+
+</body>
+</html>
